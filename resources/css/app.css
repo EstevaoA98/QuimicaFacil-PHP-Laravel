@@ -1,0 +1,36 @@
+.navbar{
+    background-color: rgb(16, 106, 185);
+}
+
+.navbar a.nav-link{
+    color: white !important;
+    padding: 15px;
+}
+
+.navbar a.nav-link:hover{
+    color: orangered !important;
+}
+
+.hero{
+    background: linear-gradient(0deg, greenyellow, green);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+
+}
+
+.hero1, .hero p{
+    color:white;
+}
+.img-fixed {
+    height: 200px; 
+    object-fit: cover; 
+    width: 100%; 
+    border: 1px solid #f8f9fa; 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+footer{
+    background-color: rgb(16, 106, 185);
+    color: white;
+}
