@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('subtitle');
-            $table->string('text_tbn');
-            $table->string('link_tbn');
+            $table->string('text_btn');
+            $table->string('link_btn');
 
             $table->string('title_topics');
             $table->string('description_topics');
