@@ -30,6 +30,9 @@
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
+.card:hover{
+    Transform : scale(1.2) !important;
+   }
 footer{
     background-color: rgb(16, 106, 185);
     color: white;
