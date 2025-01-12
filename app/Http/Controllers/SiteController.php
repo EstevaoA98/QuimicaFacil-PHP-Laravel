@@ -22,11 +22,20 @@ class SiteController extends Controller
     public function send(Request $resquest)
     {
         $resquest->validate([
-            'name' => 'required|max: 255',
-            'email' => 'required|max: 255',
-            'subject'=> 'required|max: 255',
-            'massage' => 'required|max: 255',
-            'phone' => 'phone',
+            'name' => 'reuired|max:255',
+            'email' => 'required|max:255',
+            'subject'=> 'required|max:255',
+            'message' => 'required|max:255',
+            'phone' => 'required|max:13',
+        ],
+        [
+            'name.required' => 'O campo nome é obrigatório.',
+            'email.required' => 'O campo e-mail é obrigatório.',
+            'subject.required' => 'O campo assunto é obrigatório.',
+            'message.required' => 'O campo mensagem é obrigatório.',
+            'phone.required' => 'O campo telefone é obrigatório.',
+            
         ]);
+        return redirect()->back()->with('success', 'Formulário enviado com sucesso!');
     }
 }

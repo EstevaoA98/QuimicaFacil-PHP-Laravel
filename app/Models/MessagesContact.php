@@ -8,5 +8,5 @@ class MessagesContact extends Model
 {
     protected $table = "homes";
 
-    protected $fillable = ['name', 'email', 'subject', 'massage', 'phone'] ;
+    protected $fillable = ['name', 'email', 'subject', 'message', 'phone'] ;
 }
