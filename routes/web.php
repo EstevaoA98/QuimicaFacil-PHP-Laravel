@@ -9,4 +9,6 @@ Route::get("/collaborate", [SiteController::class, 'collaborate'])->name('collab
 
 Route::post("/collaborate", [SiteController::class, 'send'])->name('collaborate.send');
 
+Route::get('/periodicTable', [SiteController::class, 'periodicTable'])->name('periodicTable');
+
 

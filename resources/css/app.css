@@ -1,39 +1,65 @@
-.navbar{
+.navbar {
     background-color: rgb(16, 106, 185);
 }
 
-.navbar a.nav-link{
+.navbar a.nav-link {
     color: white !important;
     padding: 15px;
 }
 
-.navbar a.nav-link:hover{
+.navbar a.nav-link:hover {
     color: orangered !important;
 }
 
-.hero{
+.hero {
     background: linear-gradient(0deg, greenyellow, green);
     color: white;
     padding: 100px 20px;
     text-align: center;
-
 }
 
-.hero1, .hero p{
-    color:white;
+.hero1,
+.hero p {
+    color: white;
 }
 .img-fixed {
-    height: 200px; 
-    object-fit: cover; 
-    width: 100%; 
-    border: 1px solid #f8f9fa; 
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border: 1px solid #f8f9fa;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.card:hover{
-    Transform : scale(1.2) !important;
-   }
-footer{
+.card:hover {
+    transform: scale(1.2) !important;
+}
+footer {
     background-color: rgb(16, 106, 185);
     color: white;
+}
+#tabela body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+h1,
+h2 {
+    color: #0056b3;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ul {
+    margin: 10px 0 0 20px;
+    list-style-type: disc;
+}
+ul ul {
+    list-style-type: circle;
 }

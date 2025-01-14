@@ -32,7 +32,7 @@
                         <a class="nav-link active" aria-current="page" href="{{route('collaborate')}}">Colabore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Tabela periódica</a>
+                        <a class="nav-link active" aria-current="page" href="{{route('periodicTable')}}">Tabela periódica</a>
                     </li>
                 </ul>
             </div>

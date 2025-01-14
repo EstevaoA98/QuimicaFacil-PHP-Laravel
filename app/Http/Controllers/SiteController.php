@@ -56,4 +56,9 @@ class SiteController extends Controller
 
         return redirect()->back()->with('success', 'Formulário enviado com sucesso!');
     }
-}
+
+    public function periodicTable ()
+    {
+        return view('site.periodicTable');
+    }
+}   
