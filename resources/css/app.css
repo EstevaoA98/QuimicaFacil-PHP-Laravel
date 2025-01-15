@@ -8,11 +8,11 @@
 }
 
 .navbar a.nav-link:hover {
-    color: orangered !important;
+    color: greenyellow !important;
 }
 
 .hero {
-    background: linear-gradient(0deg, greenyellow, green);
+    background: linear-gradient(.5deg, greenyellow, green);
     color: white;
     padding: 100px 20px;
     text-align: center;
@@ -29,7 +29,10 @@
     border: 1px solid #f8f9fa;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-
+/*icon navbar*/
+.imgicon{
+    width: 60px;
+}
 .card:hover {
     transform: scale(1.2) !important;
 }
@@ -45,10 +48,26 @@ footer {
     margin: 0;
     padding: 20px;
 }
-h1,
+h1{
+    color: white;
+    font-family: cursive;
+}
 h2 {
     color: #0056b3;
 }
+
+/*About*/
+
+h4{
+    color: black;
+    font: bolder;
+    font-size:40px;
+ 
+}
+p{
+    font-size: px;
+}
+
 section {
     margin-bottom: 20px;
     padding: 15px;

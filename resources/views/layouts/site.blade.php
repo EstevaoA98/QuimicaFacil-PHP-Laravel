@@ -14,7 +14,7 @@
     
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand text-white" href="{{route('home')}}">Home</a>
+            <a class="navbar-brand text-white" href="{{route('home')}}"><img class="imgicon"src="img/imgHome/iconQ.png" alt="iconQuimica"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,16 +23,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link active" href="{{route('home')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                        <a class="nav-link active" aria-current="page" href="{{route('periodicTable')}}">Tabela periódica</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('collaborate')}}">Colabore</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{route('periodicTable')}}">Tabela periódica</a>
+                        <a class="nav-link active" aria-current="page" href="{{route('about')}}">Sobre</a>
                     </li>
                 </ul>
             </div>

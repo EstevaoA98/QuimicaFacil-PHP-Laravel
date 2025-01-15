@@ -9,7 +9,7 @@
 
     <body>
         <header>
-            <h1 class="mb-3 text-center">Classes de Elementos Químicos</h1>
+            <h4 class="mb-3 text-center">Classes de Elementos Químicos</h4>
         </header>
         <main>
             <section>

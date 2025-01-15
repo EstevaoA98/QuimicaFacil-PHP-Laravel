@@ -61,4 +61,10 @@ class SiteController extends Controller
     {
         return view('site.periodicTable');
     }
+
+    public function about ()
+    {
+        return view('site.about');
+    }
+    
 }   
