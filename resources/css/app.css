@@ -1,84 +1,278 @@
+/* Variáveis de cores para o modo claro */
+:root {
+    --background-color: white;
+    --text-color: white;
+    --text-color1: black;
+    --navbar-background-color: rgba(47, 142, 225, 0.675);
+    --nav-link-color: white;
+    --hero-background: linear-gradient(0deg, white, rgba(47, 142, 225, 0.675));
+    --footer-background: rgba(47, 142, 225, 0.675);
+    --footer-text-color: white;
+    --section-background: #fff;
+    --section-box-shadow: rgba(0, 0, 0, 0.1);
+    --h1-color: white;
+    --h2-color: #0056b3;
+    --h4-color: black;
+    --border-color: #f8f9fa;
+}
+
+/* Variáveis de cores para o modo escuro */
+body.dark-mode {
+    --background-color: grey;
+    --text-color: white;
+    --navbar-background-color: black;
+    --nav-link-color: #ffffff;
+    --hero-background: linear-gradient(0deg, grey, black);
+    --footer-background: black;
+    --footer-text-color: #ffffff;
+    --section-background: grey;
+    --section-box-shadow: rgba(255, 255, 255, 0.1);
+    --h1-color: white;
+    --h2-color: white;
+    --h4-color: #ffffff;
+    --border-color: #444;
+}
+/*buton dark and light*/
+/* Estilização geral dos botões */
+button.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid transparent; /* Borda inicial invisível */
+    border-radius: 8px; /* Borda arredondada */
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  /* Estilo de hover */
+  button.dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilo de foco/seleção */
+  button.dropdown-item:focus, button.dropdown-item[aria-pressed="true"] {
+    border-color: #007bff; /* Borda azul quando selecionado */
+    background-color: #e9f5ff; /* Fundo sutil quando selecionado */
+    color: #0056b3; /* Cor do texto mais escura */
+    outline: none; /* Remove a borda padrão de foco */
+  }
+  
+  /* Ícones */
+  button .bi {
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 0.5rem;
+    transition: opacity 0.3s;
+  }
+  
+  button .bi.opacity-50 {
+    opacity: 0.5;
+  }
+  
+  /* Checkmark (visível ao pressionar) */
+  button .ms-auto {
+    margin-left: auto;
+  }
+  
+  button .d-none {
+    display: none;
+  }
+  
+  button[aria-pressed="true"] .d-none {
+    display: inline-block;
+  }
+  
+  button[aria-pressed="true"] .opacity-50 {
+    opacity: 1;
+  }
+  
+  /* Temas */
+  button[data-bs-theme-value="light"] {
+    color: #212529;
+  }
+  
+  button[data-bs-theme-value="dark"] {
+    color: #f8f9fa;
+    background-color: #343a40;
+  }
+  
+  button[data-bs-theme-value="dark"]:hover {
+    background-color: #495057;
+  }
+  
+
+/* Aplicação das variáveis */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color2);
+}
+
+/*navbar*/
 .navbar {
-    background-color: rgb(16, 106, 185);
+    background-color: var(--navbar-background-color);
 }
 
 .navbar a.nav-link {
-    color: white !important;
+    color: var(--nav-link-color) !important;
     padding: 15px;
+    font-weight: bold;
 }
 
 .navbar a.nav-link:hover {
-    color: greenyellow !important;
+    color: var(--nav-link-hover-color) !important; 
+}
+.navbar a.nav-link {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.imgicon {/*icon navbar*/
+    width: 60px;
+}
+.navbar a.nav-link:hover {
+    color: rgb(114, 226, 197); 
+    text-shadow: 0 0 10px rgb(114, 226, 197); 
+}
+
+.navbar a.nav-link:active {
+    transform: scale(1); 
 }
 
 .hero {
-    background: linear-gradient(.5deg, greenyellow, green);
-    color: white;
+    background: var(--hero-background);
+    color: var(--text-color);
     padding: 100px 20px;
     text-align: center;
 }
 
 .hero1,
 .hero p {
+    color:white;
+}
+
+h1 {
     color: white;
 }
-.img-fixed {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-    border: 1px solid #f8f9fa;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-/*icon navbar*/
-.imgicon{
-    width: 60px;
-}
+
+/*Home*/
+
 .card:hover {
     transform: scale(1.2) !important;
 }
-footer {
-    background-color: rgb(16, 106, 185);
+
+.btn-light-transparent {
+    background-color: transparent;
     color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
 }
+
+.btn-light-transparent:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(114,226,197); 
+    border-color: rgb(114,226,197); 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgb(114,226,197); 
+}
+
+.btn-light-transparent:active {
+    transform: scale(1); 
+    box-shadow: 0 2px 10px rgb(114,226,197);
+}
+#animated-title {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#animated-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px); /* Começa abaixo */
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Vindo de baixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posição final */
+    }
+}
+
+/*footer*/
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 15px;
+}
+/*Table periodic*/
 #tabela body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 20px;
 }
-h1{
-    color: white;
-    font-family: cursive;
-}
+
 h2 {
-    color: #0056b3;
+    color: var(--h2-color);
 }
 
 /*About*/
-
-h4{
-    color: black;
+h4 {
+    color: var(--h4-color);
     font: bolder;
-    font-size:40px;
- 
+    font-size: 40px;
 }
-p{
-    font-size: px;
+
+p {
+    font-size: 18px;
 }
 
 section {
     margin-bottom: 20px;
     padding: 15px;
-    background: #fff;
+    background: var(--section-background);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--section-box-shadow);
 }
+
 ul {
     margin: 10px 0 0 20px;
     list-style-type: disc;
 }
+
 ul ul {
     list-style-type: circle;
 }

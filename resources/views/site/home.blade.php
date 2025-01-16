@@ -1,9 +1,10 @@
 @extends('layouts.site')
 @section('content')
 <header class="hero">
-    <h1>{{ $home->title }}</h1>
+    
+    <h1 id="animated-title">{{ $home->title }}</h1>
     <p>{{ $home->subtitle }}</p>
-    <a href="{{ $home->link_btn }}" class="btn btn-light btn-lg mt-3">{{ $home->text_btn }} </a>
+    <a href="{{ $home->link_btn }}" class="btn btn-light-transparent btn-lg mt-3">{{ $home->text_btn }} </a>
 </header>
 
 <main class="container my-3">
