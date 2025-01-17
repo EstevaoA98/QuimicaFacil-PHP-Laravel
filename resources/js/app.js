@@ -8,12 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// JavaScript para alternar entre os modos claro e escuro
-    document.getElementById('toggle-dark-mode').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-    this.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Escuro';
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+
+// Atualiza a imagem do botão
+const button = document.getElementById('toggle-dark-mode');
+const icon = document.createElement('img');
+icon.classList.add('theme-icon');
+icon.src = savedTheme === 'dark' ? 'img/imgHome/sun.png' : 'img/imgHome/moon.png'; // Define o ícone inicial
+icon.alt = savedTheme === 'dark' ? 'Sun Icon' : 'Moon Icon';
+button.innerHTML = ''; // Limpa o conteúdo do botão
+button.appendChild(icon);
+
+// Alternar tema ao clicar no botão
+button.addEventListener('click', function () {
+    const isDarkMode = document.body.classList.toggle('dark-mode');
+    const newTheme = isDarkMode ? 'dark' : 'light';
+    localStorage.setItem('theme', newTheme);
+
+    // Atualiza o ícone com base no tema
+    icon.src = isDarkMode ? 'img/imgHome/sun.png' : 'img/imgHome/moon.png';
+    icon.alt = isDarkMode ? 'Sun Icon' : 'Moon Icon';
 });
-        
 
 document.addEventListener("DOMContentLoaded", function () {
     const element = document.getElementById("animated-title");

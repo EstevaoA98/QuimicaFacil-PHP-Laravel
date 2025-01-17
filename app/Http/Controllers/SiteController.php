@@ -57,6 +57,11 @@ class SiteController extends Controller
         return redirect()->back()->with('success', 'Formulário enviado com sucesso!');
     }
 
+    public  function blog()
+    {
+        return view('site.blog');
+    }
+
     public function periodicTable ()
     {
         return view('site.periodicTable');
@@ -67,4 +72,5 @@ class SiteController extends Controller
         return view('site.about');
     }
     
+
 }   

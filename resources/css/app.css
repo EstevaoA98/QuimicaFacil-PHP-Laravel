@@ -13,96 +13,68 @@
     --h1-color: white;
     --h2-color: #0056b3;
     --h4-color: black;
+    --ul-color:black;
+    --ul-li-color:black;
+    --bs-link-color-rgb:#0056b3;
     --border-color: #f8f9fa;
 }
 
 /* Variáveis de cores para o modo escuro */
 body.dark-mode {
-    --background-color: grey;
-    --text-color: white;
-    --navbar-background-color: black;
+    --background-color: #2c2c2caa;
+    --text-color: #ffffff;
+    --navbar-background-color: #1d1d1d98;
     --nav-link-color: #ffffff;
-    --hero-background: linear-gradient(0deg, grey, black);
-    --footer-background: black;
+    --hero-background: linear-gradient(0deg, #2c2c2c00, #1d1d1d98);
+    --footer-background: #2c2c2caa;
     --footer-text-color: #ffffff;
-    --section-background: grey;
-    --section-box-shadow: rgba(255, 255, 255, 0.1);
-    --h1-color: white;
-    --h2-color: white;
+    --section-background: transparent;
+    --section-box-shadow: #2c2c2caa;
+    --h1-color: #ffffff;
+    --h2-color: #ffffff ;
     --h4-color: #ffffff;
-    --border-color: #444;
+    --ul-color:#ffffff;
+    --ul-li-color:#ffffff;
+    --bs-link-color-rgb:#03A9F4;
+    --border-color: #2c2c2caa;
+
+    
 }
 /*buton dark and light*/
-/* Estilização geral dos botões */
-button.dropdown-item {
+
+.theme-icon {
+    width: 24px; /* Tamanho da imagem */
+    height: 24px;
+}
+
+#toggle-dark-mode {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
+    justify-content: center;
+    width: 50px; /* Tamanho do botão */
+    height: 50px;
     background-color: transparent;
-    border: 2px solid transparent; /* Borda inicial invisível */
-    border-radius: 8px; /* Borda arredondada */
-    color: #000;
-    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
-  
-  /* Estilo de hover */
-  button.dropdown-item:hover {
-    background-color: #f0f0f0;
-  }
-  
-  /* Estilo de foco/seleção */
-  button.dropdown-item:focus, button.dropdown-item[aria-pressed="true"] {
-    border-color: #007bff; /* Borda azul quando selecionado */
-    background-color: #e9f5ff; /* Fundo sutil quando selecionado */
-    color: #0056b3; /* Cor do texto mais escura */
-    outline: none; /* Remove a borda padrão de foco */
-  }
-  
-  /* Ícones */
-  button .bi {
-    width: 1.25em;
-    height: 1.25em;
-    margin-right: 0.5rem;
-    transition: opacity 0.3s;
-  }
-  
-  button .bi.opacity-50 {
-    opacity: 0.5;
-  }
-  
-  /* Checkmark (visível ao pressionar) */
-  button .ms-auto {
-    margin-left: auto;
-  }
-  
-  button .d-none {
-    display: none;
-  }
-  
-  button[aria-pressed="true"] .d-none {
-    display: inline-block;
-  }
-  
-  button[aria-pressed="true"] .opacity-50 {
-    opacity: 1;
-  }
-  
-  /* Temas */
-  button[data-bs-theme-value="light"] {
-    color: #212529;
-  }
-  
-  button[data-bs-theme-value="dark"] {
-    color: #f8f9fa;
-    background-color: #343a40;
-  }
-  
-  button[data-bs-theme-value="dark"]:hover {
-    background-color: #495057;
-  }
-  
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.theme-icon {
+    width: 40px; /* Largura da imagem */
+    height: 40px; /* Altura da imagem */
+}
+#toggle-dark-mode:hover {
+    background-color: var(--footer-background);
+    border-color: var(--footer-text-color);
+}
+
+button.dropdown-item:hover {
+    background-color: var(--footer-background);
+    border-color: var(--footer-text-color);
+    color: var(--footer-text-color);
+}
 
 /* Aplicação das variáveis */
 body {
@@ -122,7 +94,7 @@ body {
 }
 
 .navbar a.nav-link:hover {
-    color: var(--nav-link-hover-color) !important; 
+    color:rgb(114,226,197)!important; 
 }
 .navbar a.nav-link {
     background-color: transparent;
@@ -166,7 +138,10 @@ h1 {
 }
 
 /*Home*/
-
+header p{
+    font-size: 18px;
+    font-weight:400;
+}
 .card:hover {
     transform: scale(1.2) !important;
 }
@@ -197,6 +172,8 @@ h1 {
     transform: scale(1); 
     box-shadow: 0 2px 10px rgb(114,226,197);
 }
+
+/*title*/
 #animated-title {
     font-size: 48px;
     font-weight: bold;
@@ -224,7 +201,10 @@ h1 {
         transform: translateY(0); /* Posição final */
     }
 }
-
+.img-fixed {
+    height: 200px;
+    width: 100%;
+    }
 /*footer*/
 footer {
     background-color: var(--footer-background);
@@ -244,11 +224,48 @@ footer p {
     margin: 0;
     padding: 20px;
 }
-
+a{
+    color:var(--bs-link-color-rgb);
+}
 h2 {
     color: var(--h2-color);
 }
+ul {
+    color: var(--ul-color); 
+}
 
+ul li {
+    color: var(--ul-li-color); 
+}
+.btnpdf{
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(114,226,197); 
+    border-color: rgb(114,226,197); 
+    box-shadow: 0 4px 15px rgb(114,226,197); 
+}
+/*Collaborate*/ 
+.btnSend{
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(114,226,197); 
+    border-color: rgb(114,226,197); 
+    box-shadow: 0 4px 15px rgb(114,226,197); 
+}
 /*About*/
 h4 {
     color: var(--h4-color);
@@ -258,6 +275,7 @@ h4 {
 
 p {
     font-size: 18px;
+    font-weight:lighter;
 }
 
 section {

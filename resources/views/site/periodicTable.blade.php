@@ -1,10 +1,7 @@
 @extends('layouts.site')
 @section('content')
     <img src="/img/periodicTable/Periodic_table.png" alt="tabela periodica">
-
-    <p class="pdf text-center">Clique aqui para obter o arquivo em PDF <a href="/img/periodicTable/Periodic_table.pdf"
-            target="_blank" rel="external">Tabela</a></p>
-
+     <p class="text-center"><a href="/img/periodicTable/Periodic_table.pdf" class="btnpdf btn-light-transparent btn-lg mt-3" target="_blank" rel="external">Dowload Tabela Periodica</a></p>
     </head>
 
     <body>

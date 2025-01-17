@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br" class="h-100">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,6 @@
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/js/app.js'])
     <title>Química Fácil</title>
     <link rel="icon" href="{{ asset('img/imgHome/iconQ.png') }}" type="image/x-icon">
-</head>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -28,7 +27,7 @@
                         <a class="nav-link active" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        <a class="nav-link active" aria-current="page" href="{{route('blog')}}">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{route('periodicTable')}}">Tabela periódica</a>
@@ -41,10 +40,8 @@
                     </li>
                 </ul>
                 <div>
-                    <button id="toggle-dark-mode"  type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-                        <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-                        Light
-                        <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+                    <button id="toggle-dark-mode">
+                        <img src="moon.png" alt="Moon Icon" class="theme-icon">
                       </button>
                 </div>
             </div>

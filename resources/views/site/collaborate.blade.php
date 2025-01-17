@@ -35,7 +35,7 @@
                         <label for="phone" class="form-label">Telefone</label>
                         <input type="text" name="phone" id="phone" class="form-control" placeholder="(xx) xxxxx-xxxx" value="{{old('phone')}}">
                     </div>
-                        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                        <button type="submit" class="btnSend btn-light-transparent btn-lg mt-3">Enviar</button>
                 </form>
             </div>
         </div>
