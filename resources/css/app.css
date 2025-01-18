@@ -110,7 +110,7 @@ body {
 }
 
 .imgicon {/*icon navbar*/
-    width: 60px;
+    width: 40px;
 }
 .navbar a.nav-link:hover {
     color: rgb(114, 226, 197); 
