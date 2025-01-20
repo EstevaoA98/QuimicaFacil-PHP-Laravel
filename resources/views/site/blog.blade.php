@@ -9,29 +9,35 @@
     <body>
         </header>
 
-        <main class="container">
-            <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
-                <div class="col-lg-6 px-0">
-                  <img src="img/imgPost/qui-sustent-post.jpg" alt="quimica meio ambiente" class="img-fluid">
+        <main class="container p-md-5">
+            <div class="p-4 p-md-5 mb-4 bg-body-secondary d-flex align-items-center flex-column text-center">
+                <div class="col-lg-10">
+                    <img src="img/imgPost/quimi-ambi.jpg" alt="quimica meio ambiente" class="img-fluid">
                     <h1 class="display-4 fst-italic">Química e Sustentabilidade</h1>
-                    <h2>A Química que Salva o Planeta</h2>
-                    <p class="lead my-3">A química é uma grande aliada na busca por um futuro sustentável. Um exemplo é a criação de plásticos biodegradáveis, que se decompõem rapidamente e ajudam a reduzir o impacto ambiental. Outro avanço importante é o desenvolvimento de métodos químicos para capturar e armazenar dióxido de carbono da atmosfera, ajudando a combater as mudanças climáticas. No campo da energia, a química está por trás das células solares mais eficientes, que convertem a luz do sol em eletricidade limpa. Além disso, novas tecnologias de purificação de água estão permitindo o acesso a água potável em regiões carentes. Este post aborda como a química está na linha de frente das soluções ambientais, mostrando que ciência e sustentabilidade andam de mãos dadas.</p>
-                    <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue reading...</a></p>
+                    <p>A química é uma grande aliada na busca por um futuro sustentável. Um exemplo é a criação de plásticos
+                        biodegradáveis, que se decompõem rapidamente e ajudam a reduzir o impacto ambiental. Outro avanço
+                        importante é o desenvolvimento de métodos químicos para capturar e armazenar dióxido de carbono da
+                        atmosfera, ajudando a combater as mudanças climáticas. No campo da energia, a química está por trás
+                        das células solares mais eficientes, que convertem a luz do sol em eletricidade limpa. Além disso,
+                        novas tecnologias de purificação de água estão permitindo o acesso a água potável em regiões
+                        carentes. Este post aborda como a química está na linha de frente das soluções ambientais, mostrando
+                        que ciência e sustentabilidade andam de mãos dadas.</p>
+                    <p class="lead mb-0"><a href="#" class="text-body-emphasis fw-bold">Continue lendo...</a></p>
                 </div>
             </div>
-
             <div class="row mb-2">
                 <div class="col-md-6">
                     <div
                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                            <h3 class="mb-0">Featured post</h3>
-                            <div class="mb-1 text-body-secondary">Nov 12</div>
-                            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                                lead-in to additional content.</p>
+                            <h3 class="mb-0">Química e Tecnologia</h3>
+                            <img class="img-fluid custom-img mb-4"src="img/imgPost/qui-tech-post.jpg" alt="tecnologia e quimica">
+                            <div class="mb-1 text-body-secondary">A Revolução Tecnológica Movida pela Química</div>
+                            <p class="card-text mb-auto">Quando pensamos em tecnologia, é fácil esquecer o papel fundamental
+                                da química em sua criação. Afinal, os avanços tecnológicos que usamos todos os dias dependem
+                                de materiais criados e aprimorados pela química.</p>
                             <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
+                                Continue lendo...
                                 <svg class="bi">
                                     <use xlink:href="#chevron-right" />
                                 </svg>
@@ -43,13 +49,14 @@
                     <div
                         class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
-                            <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                            <h3 class="mb-0">Post title</h3>
-                            <div class="mb-1 text-body-secondary">Nov 11</div>
-                            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p>
+                            <h3 class="mb-0">A Química dos Mistérios do Universo</h3>
+                            <img class="img-fluid custom-img mb-4"src="img/imgPost/qui-uni-post.jpg" alt="universo com  quimica">
+                            <div class="mb-1 text-body-secondary">Explorando o Cosmos: A Química das Estrelas</div>
+                            <p class="mb-auto">Você já se perguntou do que são feitas as estrelas? A resposta está na
+                                química. O hidrogênio e o hélio, os elementos mais abundantes do universo, alimentam as
+                                reações nucleares que mantêm as estrelas brilhando. </p>
                             <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                                Continue reading
+                                Continue lendo...
                                 <svg class="bi">
                                     <use xlink:href="#chevron-right" />
                                 </svg>
@@ -62,16 +69,11 @@
 
             <div class="row g-5">
                 <div class="col-md-8">
-                    <h3 class="pb-4 mb-4 fst-italic border-bottom">
-                        From the Firehose
-                    </h3>
-
                     <article class="blog-post">
                         <h2 class="display-5 link-body-emphasis mb-1">Experimento Químico: <br> Crescendo Cristais de
                             Sulfato de Cobre</h2>
                         <p class="blog-post-meta">2021 by <a href="https://edu.rsc.org" target="_blank" rel="external">Royal
                                 Society of Chemistry </a></p>
-
                         <strong>
                             <p>Objetivo:
                                 Demonstrar o processo de cristalização por evaporação e obter cristais visíveis de sulfato
@@ -128,7 +130,7 @@
                         </ul>
                         <br>
                         <hr>
-                        <img src="img/imgPost/experiment-qui.webp" alt="">
+                        <img class="img-fluid custom-img mb-4"src="img/imgPost/experiment-qui.webp" alt="experimento">
                         <hr>
                         <br>
                         <h3><strong>Dicas para Sucesso</strong></h3>
@@ -150,54 +152,54 @@
                             recipiente.</li>
                         <li>Você pode observar as faces geométricas dos cristais e entender o processo de organização das
                             moléculas durante a cristalização.</li>
-                            <br>
+                        <br>
                 </div>
                 <div class="col-md-4">
                     <div class="position-sticky" style="top: 2rem;">
                         <div class="p-4 mb-3 bg-body-tertiary rounded">
-                            <h4 class="fst-italic">About</h4>
-                            <p class="mb-0">Customize this section to tell your visitors a little bit about your
-                                publication, writers, content, or something else entirely. Totally up to you.</p>
+                            <h3 class="fst-italic">Sobre o blog</h3>
+                            <p class="mb-0">Quer saber mais sobre nós? Clique em <a
+                                    href="{{ route('about') }}">'Sobre'</a>e descubra nossa história, missão e tudo o que
+                                nos inspira!</p>
                         </div>
                         <div>
-                            <h4 class="fst-italic">Recent posts</h4>
+                            <h4 class="fst-italic">Posts Recentes</h4>
                             <ul class="list-unstyled">
                                 <li>
                                     <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
-                                        <svg class="bd-placeholder-img" width="100%" height="96"
-                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <svg class="bd-placeholder-img" width="100%" height="96" xmlns=""
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                             <rect width="100%" height="100%" fill="#777" />
-                                        </svg>
+                                        </svg><img class="img-fluid custom-img mb-4"src="img/imgPost/qui-metais-post.jpg" alt="metais">
+                                        
                                         <div class="col-lg-8">
-                                            <h6 class="mb-0">Example blog post title</h6>
+                                            <h6 class="mb-0">Elementos que Contam Histórias</h6>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
-                                        <svg class="bd-placeholder-img" width="100%" height="96"
-                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <svg class="bd-placeholder-img" width="100%" height="96" xmlns=""
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                             <rect width="100%" height="100%" fill="#777" />
                                         </svg>
+                                        <img class="img-fluid custom-img mb-4"src="img/imgPost/qui-hist-post.jpg" alt="quimica antiga">
                                         <div class="col-lg-8">
-                                            <h6 class="mb-0">This is another blog post title</h6>
+                                            <h6 class="mb-0">Elementos que Contam Histórias</h6>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
                                         href="#">
-                                        <svg class="bd-placeholder-img" width="100%" height="96"
-                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                                        <svg class="bd-placeholder-img" width="100%" height="96" xmlns=""
+                                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                             <rect width="100%" height="100%" fill="#777" />
-                                        </svg>
+                                        </svg><img class="img-fluid custom-img mb-4"src="img/imgPost/qui-coz-post.jpg" alt="cozinhando">
                                         <div class="col-lg-8">
-                                            <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+                                            <h6 class="mb-0">Química na Cozinha</h6>
                                         </div>
                                     </a>
                                 </li>
